@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VSD Cars World — buy, sell and exchange cars. Your car, your budget, your choice.">
+  <title>VSD Cars World | Buy • Sell • Exchange</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><img src="assets/vsd-logo.jpg" alt="VSD Cars World logo"><span>VSD <b>CARS WORLD</b></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav id="nav"><a href="#home">Home</a><a href="#buy">Buy Cars</a><a href="#sell">Sell Your Car</a><a href="#about">About</a><a class="nav-cta" href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">DRIVE A BETTER TOMORROW</p>
+    <h1>Your Car.<br><em>Your Budget.</em><br>Your Choice.</h1>
+    <p class="hero-text">Find the right car at the right price. Explore quality new and pre-owned cars with VSD Cars World.</p>
+    <div class="hero-actions"><a class="btn gold" href="#buy">Explore Cars</a><a class="btn outline" href="#sell">Sell Your Car</a></div>
+    <div class="trust-row"><span>✓ Trusted Deals</span><span>✓ Quality Choices</span><span>✓ Customer First</span></div>
+  </div>
+  <div class="hero-art"><div class="halo"></div><div class="hero-car">🚘</div><div class="hero-tag">BUY <i>•</i> SELL <i>•</i> EXCHANGE</div></div>
+</section>
+
+<section class="section" id="buy">
+  <div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT RIDE</p><h2>Featured <em>Cars</em></h2></div><span class="muted" id="resultCount">0 cars available</span></div>
+  <div class="filters">
+    <input id="searchInput" type="search" placeholder="Search brand, model or location…">
+    <select id="brandFilter"><option value="">All brands</option></select>
+    <select id="typeFilter"><option value="">All categories</option><option>New</option><option>Used</option></select>
+    <select id="priceFilter"><option value="">Any budget</option><option value="500000">Under ₹5 lakh</option><option value="1000000">Under ₹10 lakh</option><option value="1500000">Under ₹15 lakh</option><option value="2500000">Under ₹25 lakh</option></select>
+  </div>
+  <div class="car-grid" id="carGrid"></div>
+  <div class="empty hidden" id="emptyState">No cars match your search yet. Try another filter.</div>
+</section>
+
+<section class="sell-section" id="sell">
+  <div><p class="eyebrow">HAVE A CAR TO SELL?</p><h2>Get your car in front of<br><em>the right buyers.</em></h2><p>Share your car details and photos with VSD Cars World. Our team will contact you.</p><a class="btn gold" href="#contact">Contact VSD Cars World</a></div>
+  <div class="sell-points"><div>01 <b>Share your car details</b></div><div>02 <b>Get a buyer enquiry</b></div><div>03 <b>Close your deal</b></div></div>
+</section>
+
+<section class="section admin-section" id="admin">
+  <div class="section-heading"><div><p class="eyebrow">OWNER AREA</p><h2>Admin <em>Dashboard</em></h2><p class="muted">Add and manage the cars displayed on this website.</p></div><span class="admin-label">LOCAL DEMO ADMIN</span></div>
+  <div class="admin-note">Demo mode: car listings are saved in this browser only. For a live public website with secure admin login and shared listings, connect a hosting service and database before launch.</div>
+  <form id="carForm" class="admin-form">
+    <input type="hidden" id="editId">
+    <label>Car brand<input id="carBrand" required placeholder="e.g. Maruti Suzuki"></label>
+    <label>Model<input id="carModel" required placeholder="e.g. Brezza ZXI"></label>
+    <label>Price (₹)<input id="carPrice" required type="number" min="1" placeholder="850000"></label>
+    <label>Year<input id="carYear" required type="number" min="1990" max="2035" placeholder="2022"></label>
+    <label>Kilometres driven<input id="carKm" type="number" min="0" placeholder="35000"></label>
+    <label>Category<select id="carType"><option>Used</option><option>New</option></select></label>
+    <label>Fuel<select id="carFuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>Electric</option><option>Hybrid</option></select></label>
+    <label>Transmission<select id="carTransmission"><option>Manual</option><option>Automatic</option></select></label>
+    <label>Location<input id="carLocation" placeholder="e.g. Hyderabad"></label>
+    <label class="wide">Description<textarea id="carDescription" rows="3" placeholder="Condition, ownership, features…"></textarea></label>
+    <label class="wide">Car photo<input id="carPhoto" type="file" accept="image/*"><small>Choose a JPG, PNG or WebP image.</small></label>
+    <div class="form-actions wide"><button class="btn gold" type="submit" id="saveCarBtn">Add Car Listing</button><button class="btn outline dark-outline hidden" type="button" id="cancelEdit">Cancel Edit</button></div>
+  </form>
+  <div class="admin-list" id="adminList"></div>
+</section>
+
+<section class="contact-section" id="contact">
+  <p class="eyebrow">LET'S TALK CARS</p><h2>Ready for your next <em>deal?</em></h2>
+  <p>Contact VSD Cars World for buying, selling and exchange enquiries.</p>
+  <div class="contact-cards">
+    <a class="contact-card" href="tel:+918123940634"><span>☎</span><b>Call Us</b><small>8123940634</small></a>
+    <a class="contact-card" href="https://wa.me/918123940634" target="_blank" rel="noopener"><span>◉</span><b>WhatsApp</b><small>8123940634</small></a>
+    <a class="contact-card" href="mailto:Vsdcarsworld@gmail.com"><span>✉</span><b>Email Us</b><small>Vsdcarsworld@gmail.com</small></a>
+  </div>
+  <div class="contact-actions"><a class="btn gold" id="whatsappLink" href="https://wa.me/918123940634" target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn outline" href="tel:+918123940634">Call Us</a></div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/profile.php?id=61595759235399" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/vsdcarsworld/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@VSDCarsworld" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</section>
+</main>
+<footer><div class="footer-brand">VSD <b>CARS WORLD</b></div><p>BUY • SELL • EXCHANGE</p><span>© <span id="year"></span> VSD Cars World. Drive a better tomorrow.</span></footer>
+<script src="script.js"></script>
+</body></html>
