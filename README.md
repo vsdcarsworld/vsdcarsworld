@@ -1,16 +1,16 @@
-## Hi there 👋
+VSD CARS WORLD WEBSITE — QUICK START
 
-<!--
-**vsdcarsworld/vsdcarsworld** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+1. Extract the ZIP file.
+2. Open index.html in Chrome, Edge, or another modern browser.
+3. Scroll to Admin Dashboard to add, edit, or delete car listings.
+4. Listings and uploaded photos are saved in that browser's local storage.
 
-Here are some ideas to get you started:
+IMPORTANT DEMO LIMITATIONS
+- This is a front-end website prototype. There is no server, database, secure admin login, or multi-device sync.
+- Cars added in your browser are visible only in that same browser on that same device.
+- Before publishing for real customers, connect a backend/database and secure admin authentication.
+- Update WHATSAPP_NUMBER and PHONE_NUMBER near the top of script.js. Use digits only for WhatsApp, including country code (India: 91...).
+- Sample listings are demo examples. Delete or replace them with your actual inventory.
+- Your uploaded VSD logo is included in assets/vsd-logo.jpg.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+To publish the static preview, upload the extracted folder to a static hosting provider. Do not treat the demo admin form as secure for a live business site.
